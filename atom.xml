@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zza333.github.io/</id>
-    <title>Gridea</title>
-    <updated>2020-04-01T10:30:25.013Z</updated>
+    <title>area #333</title>
+    <updated>2020-04-01T11:10:16.932Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zza333.github.io/"/>
     <link rel="self" href="https://zza333.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>世界边缘地带</subtitle>
     <logo>https://zza333.github.io/images/avatar.png</logo>
     <icon>https://zza333.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <rights>All rights reserved 2020, area #333</rights>
     <entry>
         <title type="html"><![CDATA[zza333]]></title>
         <id>https://zza333.github.io/post/zza333/</id>
