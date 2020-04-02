@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zza333.github.io/</id>
-    <title>area#0x14D</title>
-    <updated>2020-04-02T01:18:02.978Z</updated>
+    <title>area of #0x14D</title>
+    <updated>2020-04-02T01:19:46.963Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zza333.github.io/"/>
     <link rel="self" href="https://zza333.github.io/atom.xml"/>
     <subtitle>B.Q.A.C.</subtitle>
     <logo>https://zza333.github.io/images/avatar.png</logo>
     <icon>https://zza333.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, area#0x14D</rights>
+    <rights>All rights reserved 2020, area of #0x14D</rights>
     <entry>
         <title type="html"><![CDATA[这里是...]]></title>
         <id>https://zza333.github.io/post/zza333/</id>
         <link href="https://zza333.github.io/post/zza333/">
         </link>
-        <updated>2020-04-01T06:30:30.000Z</updated>
+        <updated>2020-04-02T06:30:30.000Z</updated>
         <content type="html"><![CDATA[<p>本世界-边缘地带-#333的博客。<br>
-人迹罕至。</p>
+人迹罕至之地。</p>
 ]]></content>
     </entry>
 </feed>
