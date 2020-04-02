@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zza333.github.io/</id>
-    <title>area#333</title>
-    <updated>2020-04-02T01:16:49.824Z</updated>
+    <title>area#0x14D</title>
+    <updated>2020-04-02T01:18:02.978Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zza333.github.io/"/>
     <link rel="self" href="https://zza333.github.io/atom.xml"/>
     <subtitle>B.Q.A.C.</subtitle>
     <logo>https://zza333.github.io/images/avatar.png</logo>
     <icon>https://zza333.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, area#333</rights>
+    <rights>All rights reserved 2020, area#0x14D</rights>
     <entry>
         <title type="html"><![CDATA[这里是...]]></title>
         <id>https://zza333.github.io/post/zza333/</id>
