@@ -1,22 +1,105 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://zza333.github.io/</id>
-    <title>#0x14D</title>
-    <updated>2020-05-19T04:59:40.068Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://zza333.github.io/"/>
-    <link rel="self" href="https://zza333.github.io/atom.xml"/>
-    <subtitle>B.Q.A.C.</subtitle>
-    <logo>https://zza333.github.io/images/avatar.png</logo>
-    <icon>https://zza333.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, #0x14D</rights>
-    <entry>
-        <title type="html"><![CDATA[Burnside引理和Polya定理]]></title>
-        <id>https://zza333.github.io/post/burnside-yin-li-he-polya-ding-li/</id>
-        <link href="https://zza333.github.io/post/burnside-yin-li-he-polya-ding-li/">
-        </link>
-        <updated>2020-05-18T15:12:27.000Z</updated>
-        <content type="html"><![CDATA[<p>用于一些对“本质不同”方案计数。组合数学中的重要定理。</p>
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Burnside引理和Polya定理 | #0x14D</title>
+<link rel="shortcut icon" href="https://zza333.github.io//favicon.ico?v=1589864343443">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://zza333.github.io//styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Burnside引理和Polya定理 | #0x14D - Atom Feed" href="https://zza333.github.io//atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="用于一些对“本质不同”方案计数。组合数学中的重要定理。
+1.一个问题
+给定一个n个点的环，现用m种颜色对其染色，问有多少种本质不同的染色方案？
+本质不同：仅指不能通过旋转重合。
+
+关于环上染色方案的问题一直被作为burnside/polya..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://zza333.github.io/">
+  <img class="avatar" src="https://zza333.github.io//images/avatar.png?v=1589864343443" alt="">
+  </a>
+  <h1 class="site-title">
+    #0x14D
+  </h1>
+  <p class="site-description">
+    B.Q.A.C.
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="https://zza333.github.io/home" class="menu">
+          home
+        </a>
+      
+    
+      
+        <a href="/" class="menu">
+          博客
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Burnside引理和Polya定理
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-05-18
+              </span>
+              <span>
+                9 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>用于一些对“本质不同”方案计数。组合数学中的重要定理。</p>
 <h2>1.一个问题</h2>
 <pre><code>给定一个n个点的环，现用m种颜色对其染色，问有多少种本质不同的染色方案？
 本质不同：仅指不能通过旋转重合。
@@ -78,17 +161,104 @@
 <p>于是解决了那道环上染色的题。</p>
 <p>比如：n=4,m=3的情况中，所有置换分别为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mn>1</mn><mo>)</mo><mo>(</mo><mn>2</mn><mo>)</mo><mo>(</mo><mn>3</mn><mo>)</mo><mo>(</mo><mn>4</mn><mo>)</mo><mo separator="true">,</mo><mo>(</mo><mn>1234</mn><mo>)</mo><mo separator="true">,</mo><mo>(</mo><mn>13</mn><mo>)</mo><mo>(</mo><mn>24</mn><mo>)</mo><mo separator="true">,</mo><mo>(</mo><mn>1432</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">(1)(2)(3)(4),(1 2 3 4),(1 3)(2 4),(1 4 3 2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord">2</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord">3</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord">4</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mord">2</span><span class="mord">3</span><span class="mord">4</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mord">3</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord">2</span><span class="mord">4</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mord">4</span><span class="mord">3</span><span class="mord">2</span><span class="mclose">)</span></span></span></span>，分别能表示为4,1,2,1个循环，于是本质不同方案总数为24种。</p>
 <p>现在考虑如何快速计算循环数。假设有一个置换把所有节点向后平移<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span></span></span></span>，则该置换循环个数为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>g</mi><mi>c</mi><mi>d</mi><mo>(</mo><mi>n</mi><mo separator="true">,</mo><mi>k</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">gcd(n,k)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault">c</span><span class="mord mathdefault">d</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mclose">)</span></span></span></span>。于是我们要求的可化为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msubsup><msup><mi>m</mi><mi>g</mi></msup><mi>c</mi><mi>d</mi><mo>(</mo><mi>n</mi><mo separator="true">,</mo><mi>i</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">\sum_{i=0}^{n-1}m^gcd(n,i)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.253718em;vertical-align:-0.29971000000000003em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.954008em;"><span style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">0</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.29971000000000003em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">g</span></span></span></span></span></span></span></span><span class="mord mathdefault">c</span><span class="mord mathdefault">d</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">i</span><span class="mclose">)</span></span></span></span>。用欧拉函数优化为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mo>∑</mo><mrow><mi>d</mi><mi mathvariant="normal">∣</mi><mi>i</mi></mrow></msub><mi>φ</mi><mo>(</mo><mi>i</mi><mi mathvariant="normal">/</mi><mi>d</mi><mo>)</mo><mo>∗</mo><msup><mi>m</mi><mi>d</mi></msup></mrow><annotation encoding="application/x-tex">\sum_{d|i}\varphi(i/d)*m^d</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.22471em;vertical-align:-0.47471em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.22528999999999993em;"><span style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">d</span><span class="mord mtight">∣</span><span class="mord mathdefault mtight">i</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.47471em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">φ</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mord">/</span><span class="mord mathdefault">d</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.849108em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.849108em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">d</span></span></span></span></span></span></span></span></span></span></span>即可。复杂度<s>听说</s>是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>n</mi><mfrac><mn>3</mn><mn>4</mn></mfrac></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n^{\frac{3}{4}})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.20402em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9540200000000001em;"><span style="top:-3.363em;margin-right:0.05em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mopen nulldelimiter sizing reset-size3 size6"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8443142857142858em;"><span style="top:-2.656em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight">4</span></span></span></span><span style="top:-3.2255000000000003em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line mtight" style="border-bottom-width:0.049em;"></span></span><span style="top:-3.384em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight">3</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.344em;"><span></span></span></span></span></span><span class="mclose nulldelimiter sizing reset-size3 size6"></span></span></span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>的。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[这里是...]]></title>
-        <id>https://zza333.github.io/post/zza333/</id>
-        <link href="https://zza333.github.io/post/zza333/">
-        </link>
-        <updated>2020-04-02T06:30:30.000Z</updated>
-        <content type="html"><![CDATA[<p>繁华世界的边缘。<br>
-某博客。<br>
-人迹罕至之地。</p>
-]]></content>
-    </entry>
-</feed>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://zza333.github.io/post/zza333/">
+              <h3 class="post-title">
+                这里是...
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '0f281c11925e928ea3f5',
+    clientSecret: '50e0457068f2b07ca8f0a1ccbd2576a925e234e4',
+    repo: 'zza333.github.io',
+    owner: 'zza333',
+    admin: ['zza333'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  <script type="text/javascript" src="https://v1.cnzz.com/z_stat.php?id=1278767167&web_id=1278767167"></script><pre>  </pre>
+Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://zza333.github.io//atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
