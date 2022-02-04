@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title> [NOI2010] 成长快乐 题解 | Aly_</title>
-<link rel="shortcut icon" href="https://zza333.github.io/favicon.ico?v=1643968247735">
+<link rel="shortcut icon" href="https://zza333.github.io/favicon.ico?v=1643970778861">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://zza333.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title=" [NOI2010] 成长快乐 题解 | Aly_ - Atom Feed" href="https://zza333.github.io/atom.xml">
@@ -13,8 +13,9 @@
 
     <meta name="description" content="初步分析
 ​	nemo 肯定走直线。
+
 ​	不妨把 nemo 想象成只能以速度 vvv 运动或静止。而在最优策略中，nemo 显然不会静止不动。
-​	所以 nemo 的最优策略一定取如下形态：以某种顺序把食物排成一列 {pi}\{p_i\}{..." />
+​	所以 nemo 的最优策略一定取如下形态：以某种顺序把食物排成一列 {pi}\{p_i\}..." />
     <meta name="keywords" content="信" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -24,7 +25,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://zza333.github.io">
-  <img class="avatar" src="https://zza333.github.io/images/avatar.png?v=1643968247735" alt="">
+  <img class="avatar" src="https://zza333.github.io/images/avatar.png?v=1643970778861" alt="">
   </a>
   <h1 class="site-title">
     Aly_
@@ -97,6 +98,7 @@
               <div class="post-content">
                 <h4 id="初步分析">初步分析</h4>
 <p>​	<strong>nemo 肯定走直线</strong>。</p>
+<!-- more -->
 <p>​	不妨把 nemo 想象成只能以速度 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span></span></span></span> 运动或静止。而在最优策略中，nemo 显然不会静止不动。</p>
 <p>​	所以 nemo 的最优策略一定取如下形态：<strong>以某种顺序把食物排成一列 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>{</mo><msub><mi>p</mi><mi>i</mi></msub><mo>}</mo></mrow><annotation encoding="application/x-tex">\{p_i\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord"><span class="mord mathdefault">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">}</span></span></span></span>，从 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>{</mo><msub><mi>p</mi><mn>1</mn></msub><mo>}</mo></mrow><annotation encoding="application/x-tex">\{p_1\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord"><span class="mord mathdefault">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">}</span></span></span></span> 开始一个一个吃，每次都走当前最短时间对应路径</strong>。</p>
 <p>​	因为 nemo 已知了各食物的位置和速度，nemo 可以在目标食物的路径上某点等待，而最优的该点必然满足 nemo 和食物同时到达。因而可以计算出其到单个食物所需的最短时间。</p>
