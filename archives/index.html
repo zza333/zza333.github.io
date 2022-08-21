@@ -1,123 +1,141 @@
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<meta charset="utf-8" >
+
 <title>Aly_</title>
-<link rel="shortcut icon" href="https://zza333.github.io/favicon.ico?v=1661069833654">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<meta name="description" content="B.Q.A.C.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zza333.github.io/favicon.ico?v=1661070022063">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://zza333.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="Aly_ - Atom Feed" href="https://zza333.github.io/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="B.Q.A.C." />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://zza333.github.io">
-  <img class="avatar" src="https://zza333.github.io/images/avatar.png?v=1661069833654" alt="">
-  </a>
-  <h1 class="site-title">
-    Aly_
-  </h1>
-  <p class="site-description">
-    B.Q.A.C.
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://zza333.github.io">
+        <img class="avatar" src="https://zza333.github.io/images/avatar.png?v=1661070022063" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://zza333.github.io">
+        <h1 class="site-title">Aly_</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
 </div>
 
-    
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
         
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+        <div class="content-container">
+          
+          
 
 <div class="archives-container">
   
     <h2 class="year">2022</h2>
     
       
-        <a href="https://zza333.github.io/post/sheng-cun-ri-ji/" class="post">
-          <h2 class="post-title">
-            生存日记
-          </h2>
-          <div class="time">2022-08-21</div>
-        </a>
+        <article class="post">
+          <a href="https://zza333.github.io/post/sheng-cun-ri-ji/">
+            <h2 class="post-title">
+              生存日记
+              <small>2022-08-21</small>
+            </h2>
+          </a>
+        </article>
       
     
       
-        <a href="https://zza333.github.io/post/bu-fen-zhi-shi-dian/" class="post">
-          <h2 class="post-title">
-            部分知识点
-          </h2>
-          <div class="time">2022-08-20</div>
-        </a>
+        <article class="post">
+          <a href="https://zza333.github.io/post/bu-fen-zhi-shi-dian/">
+            <h2 class="post-title">
+              部分知识点
+              <small>2022-08-20</small>
+            </h2>
+          </a>
+        </article>
       
     
       
-        <a href="https://zza333.github.io/post/cheng-shi-man-you/" class="post">
-          <h2 class="post-title">
-            城市漫游
-          </h2>
-          <div class="time">2022-06-30</div>
-        </a>
+        <article class="post">
+          <a href="https://zza333.github.io/post/cheng-shi-man-you/">
+            <h2 class="post-title">
+              城市漫游
+              <small>2022-06-30</small>
+            </h2>
+          </a>
+        </article>
       
     
       
-        <a href="https://zza333.github.io/post/hong-se/" class="post">
-          <h2 class="post-title">
-            红色
-          </h2>
-          <div class="time">2022-02-04</div>
-        </a>
+        <article class="post">
+          <a href="https://zza333.github.io/post/hong-se/">
+            <h2 class="post-title">
+              红色
+              <small>2022-02-04</small>
+            </h2>
+          </a>
+        </article>
       
     
       
-        <a href="https://zza333.github.io/post/zhe-li-shi/" class="post">
-          <h2 class="post-title">
-            这里是……
-          </h2>
-          <div class="time">2022-01-30</div>
-        </a>
+        <article class="post">
+          <a href="https://zza333.github.io/post/zhe-li-shi/">
+            <h2 class="post-title">
+              这里是……
+              <small>2022-01-30</small>
+            </h2>
+          </a>
+        </article>
       
     
       
@@ -156,84 +174,102 @@
       
     
       
-        <a href="https://zza333.github.io/post/noi2019-i-jun-de-tan-xian-ti-jie/" class="post">
-          <h2 class="post-title">
-            【[NOI2019] I 君的探险】 题解
-          </h2>
-          <div class="time">2021-06-03</div>
-        </a>
+        <article class="post">
+          <a href="https://zza333.github.io/post/noi2019-i-jun-de-tan-xian-ti-jie/">
+            <h2 class="post-title">
+              【[NOI2019] I 君的探险】 题解
+              <small>2021-06-03</small>
+            </h2>
+          </a>
+        </article>
       
     
       
-        <a href="https://zza333.github.io/post/noi2008-ao-yun-wu-liu-ti-jie/" class="post">
-          <h2 class="post-title">
-            [NOI2008] 奥运物流 题解
-          </h2>
-          <div class="time">2021-04-29</div>
-        </a>
+        <article class="post">
+          <a href="https://zza333.github.io/post/noi2008-ao-yun-wu-liu-ti-jie/">
+            <h2 class="post-title">
+              [NOI2008] 奥运物流 题解
+              <small>2021-04-29</small>
+            </h2>
+          </a>
+        </article>
       
     
       
-        <a href="https://zza333.github.io/post/noi2008-she-ji-lu-xian-ti-jie/" class="post">
-          <h2 class="post-title">
-             [NOI2008] 设计路线 题解
-          </h2>
-          <div class="time">2021-04-28</div>
-        </a>
+        <article class="post">
+          <a href="https://zza333.github.io/post/noi2008-she-ji-lu-xian-ti-jie/">
+            <h2 class="post-title">
+               [NOI2008] 设计路线 题解
+              <small>2021-04-28</small>
+            </h2>
+          </a>
+        </article>
       
     
       
-        <a href="https://zza333.github.io/post/noi2010-cheng-chang-kuai-le-ti-jie/" class="post">
-          <h2 class="post-title">
-             [NOI2010] 成长快乐 题解
-          </h2>
-          <div class="time">2021-04-26</div>
-        </a>
+        <article class="post">
+          <a href="https://zza333.github.io/post/noi2010-cheng-chang-kuai-le-ti-jie/">
+            <h2 class="post-title">
+               [NOI2010] 成长快乐 题解
+              <small>2021-04-26</small>
+            </h2>
+          </a>
+        </article>
       
     
       
-        <a href="https://zza333.github.io/post/noi2018-ni-de-ming-zi-de-ling-yi-chong-jie-fa/" class="post">
-          <h2 class="post-title">
-            [NOI2018] 你的名字 的另一种解法
-          </h2>
-          <div class="time">2021-04-26</div>
-        </a>
+        <article class="post">
+          <a href="https://zza333.github.io/post/noi2018-ni-de-ming-zi-de-ling-yi-chong-jie-fa/">
+            <h2 class="post-title">
+              [NOI2018] 你的名字 的另一种解法
+              <small>2021-04-26</small>
+            </h2>
+          </a>
+        </article>
       
     
       
-        <a href="https://zza333.github.io/post/jie-ti-bao-gao-2021-sheng-xuan-you-ji/" class="post">
-          <h2 class="post-title">
-            解题报告+2021省选游记
-          </h2>
-          <div class="time">2021-04-19</div>
-        </a>
+        <article class="post">
+          <a href="https://zza333.github.io/post/jie-ti-bao-gao-2021-sheng-xuan-you-ji/">
+            <h2 class="post-title">
+              解题报告+2021省选游记
+              <small>2021-04-19</small>
+            </h2>
+          </a>
+        </article>
       
     
       
-        <a href="https://zza333.github.io/post/sheng-xuan-lian-kao-2021-a-juan-zhi-pei-ti-jie/" class="post">
-          <h2 class="post-title">
-            [省选联考 2021 A 卷] 支配 题解
-          </h2>
-          <div class="time">2021-04-17</div>
-        </a>
+        <article class="post">
+          <a href="https://zza333.github.io/post/sheng-xuan-lian-kao-2021-a-juan-zhi-pei-ti-jie/">
+            <h2 class="post-title">
+              [省选联考 2021 A 卷] 支配 题解
+              <small>2021-04-17</small>
+            </h2>
+          </a>
+        </article>
       
     
       
-        <a href="https://zza333.github.io/post/noi-online-2021-ti-gao-zu-dao-yu-tan-xian-ti-jie/" class="post">
-          <h2 class="post-title">
-             [NOI Online 2021 提高组] 岛屿探险 题解
-          </h2>
-          <div class="time">2021-03-27</div>
-        </a>
+        <article class="post">
+          <a href="https://zza333.github.io/post/noi-online-2021-ti-gao-zu-dao-yu-tan-xian-ti-jie/">
+            <h2 class="post-title">
+               [NOI Online 2021 提高组] 岛屿探险 题解
+              <small>2021-03-27</small>
+            </h2>
+          </a>
+        </article>
       
     
       
-        <a href="https://zza333.github.io/post/ti-jie-qing-hua-ji-xun-2017sheng-cheng-shu-ji-shu/" class="post">
-          <h2 class="post-title">
-            题解【[清华集训2017]生成树计数】
-          </h2>
-          <div class="time">2021-03-18</div>
-        </a>
+        <article class="post">
+          <a href="https://zza333.github.io/post/ti-jie-qing-hua-ji-xun-2017sheng-cheng-shu-ji-shu/">
+            <h2 class="post-title">
+              题解【[清华集训2017]生成树计数】
+              <small>2021-03-18</small>
+            </h2>
+          </a>
+        </article>
       
     
       
@@ -272,41 +308,69 @@
       
     
       
-        <a href="https://zza333.github.io/post/ti-jie-noi2004sha-qiu/" class="post">
-          <h2 class="post-title">
-            题解【[NOI2004]沙丘】
-          </h2>
-          <div class="time">2020-11-15</div>
-        </a>
+        <article class="post">
+          <a href="https://zza333.github.io/post/ti-jie-noi2004sha-qiu/">
+            <h2 class="post-title">
+              题解【[NOI2004]沙丘】
+              <small>2020-11-15</small>
+            </h2>
+          </a>
+        </article>
       
     
       
-        <a href="https://zza333.github.io/post/ti-jie-apio2018-new-home-xin-jia/" class="post">
-          <h2 class="post-title">
-            题解【[APIO2018] New Home 新家】
-          </h2>
-          <div class="time">2020-10-31</div>
-        </a>
+        <article class="post">
+          <a href="https://zza333.github.io/post/ti-jie-apio2018-new-home-xin-jia/">
+            <h2 class="post-title">
+              题解【[APIO2018] New Home 新家】
+              <small>2020-10-31</small>
+            </h2>
+          </a>
+        </article>
       
     
   
 </div>
 
-    
-        <div class="pagination-container">
-  
-  
-</div>
 
-    
+        </div>
+
         <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-  <a class="rss" href="https://zza333.github.io/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
+  <div class="slogan">B.Q.A.C.</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zza333.github.io/atom.xml" target="_blank">RSS</a>
 </div>
+
 
       </div>
+      <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
     </div>
   </body>
 </html>

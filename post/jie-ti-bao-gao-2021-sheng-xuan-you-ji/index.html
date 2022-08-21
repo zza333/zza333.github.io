@@ -1,100 +1,108 @@
+
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<meta charset="utf-8" >
+
 <title>解题报告+2021省选游记 | Aly_</title>
-<link rel="shortcut icon" href="https://zza333.github.io/favicon.ico?v=1661069833654">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<meta name="description" content="B.Q.A.C.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zza333.github.io/favicon.ico?v=1661070022063">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://zza333.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="解题报告+2021省选游记 | Aly_ - Atom Feed" href="https://zza333.github.io/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-    <meta name="description" content="解题报告
-D1T1 卡牌游戏
-​	考虑二分答案 XXX，枚举最小值 mimimi，于是确定最大值 mxmxmx。在 aia_iai​ 中找出最小值最大值的位置，则中间的都不用翻，两边的都要翻。判断翻后是否合法以及翻的张数是否小于 mmm 即..." />
-    <meta name="keywords" content="纪" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://zza333.github.io">
-  <img class="avatar" src="https://zza333.github.io/images/avatar.png?v=1661069833654" alt="">
-  </a>
-  <h1 class="site-title">
-    Aly_
-  </h1>
-  <p class="site-description">
-    B.Q.A.C.
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://zza333.github.io">
+        <img class="avatar" src="https://zza333.github.io/images/avatar.png?v=1661070022063" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://zza333.github.io">
+        <h1 class="site-title">Aly_</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
 </div>
 
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
         <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              解题报告+2021省选游记
-            </h2>
-            <div class="post-info">
-              <span>
-                2021-04-19
-              </span>
-              <span>
-                8 min read
-              </span>
-              
-                <a href="https://zza333.github.io/tag/Hbis4oBaC/" class="post-tag">
-                  # 纪
-                </a>
-              
-            </div>
+          
+          <h2 class="post-title">解题报告+2021省选游记</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2021-04-19</span>
             
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <h2 id="解题报告">解题报告</h2>
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://zza333.github.io/tag/Hbis4oBaC/">
+                    纪
+                    
+                  </a>
+                
+              </span>
+            
+          </div>
+          <div class="post-content">
+            <h2 id="解题报告">解题报告</h2>
 <h4 id="d1t1-卡牌游戏">D1T1 卡牌游戏</h4>
 <p>​	考虑二分答案 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span></span></span></span>，枚举最小值 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>i</mi></mrow><annotation encoding="application/x-tex">mi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">i</span></span></span></span>，于是确定最大值 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">mx</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">x</span></span></span></span>。在 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">a_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 中找出最小值最大值的位置，则中间的都不用翻，两边的都要翻。判断翻后是否合法以及翻的张数是否小于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span> 即可。</p>
 <!-- more -->
@@ -164,128 +172,86 @@ D1T1 卡牌游戏
 <pre><code>为什么 8 个共处 2 年的同学要互相逼着对方退役？
 </code></pre>
 
-              </div>
-              <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#%E8%A7%A3%E9%A2%98%E6%8A%A5%E5%91%8A">解题报告</a><br>
-*
-<ul>
-<li><a href="#d1t1-%E5%8D%A1%E7%89%8C%E6%B8%B8%E6%88%8F">D1T1 卡牌游戏</a></li>
-<li><a href="#d1t2-%E7%9F%A9%E9%98%B5%E6%B8%B8%E6%88%8F">D1T2 矩阵游戏</a></li>
-<li><a href="#d1t3-%E5%9B%BE%E5%87%BD%E6%95%B0">D1T3 图函数</a></li>
-<li><a href="#d2t1-%E5%AE%9D%E7%9F%B3">D2T1 宝石</a></li>
-<li><a href="#d2t2-%E6%BB%9A%E6%A6%9C">D2T2 滚榜</a></li>
-<li><a href="#d2t3-%E6%94%AF%E9%85%8D">D2T3 支配</a></li>
-</ul>
-</li>
-<li><a href="#%E6%80%BB%E7%BB%93">总结</a><br>
-*
-<ul>
-<li><a href="#day-1">Day 1</a></li>
-<li><a href="#day-2">Day 2</a></li>
-<li><a href="#day">Day ？</a></li>
-<li><a href="#and">And</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-              </div>
-            </div>
-          </article>
+          </div>
         </div>
 
         
           <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://zza333.github.io/post/sheng-xuan-lian-kao-2021-a-juan-zhi-pei-ti-jie/">
+            <a class="purple-link" href="https://zza333.github.io/post/sheng-xuan-lian-kao-2021-a-juan-zhi-pei-ti-jie/">
               <h3 class="post-title">
-                [省选联考 2021 A 卷] 支配 题解
+                下一篇：[省选联考 2021 A 卷] 支配 题解
               </h3>
             </a>
           </div>
-        
-
-        
           
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+      </div>
 
-<div id="gitalk-container"></div>
+      
+        
+          <div id="gitalk-container"></div>
+        
 
-<script>
+        
+      
 
-  var gitalk = new Gitalk({
-    clientID: '0f281c11925e928ea3f5',
-    clientSecret: '42d04666a586164ffbdc6175cf85a2c326794e89',
-    repo: 'zza333.github.io',
-    owner: 'zza333',
-    admin: ['zza333'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
+      <div class="site-footer">
+  <div class="slogan">B.Q.A.C.</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zza333.github.io/atom.xml" target="_blank">RSS</a>
+</div>
 
-  gitalk.render('gitalk-container')
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
-          
 
-          
-        
 
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-  <a class="rss" href="https://zza333.github.io/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
-</div>
-
-      </div>
-    </div>
-
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
     <script>
-      hljs.initHighlightingOnLoad()
 
-      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+      var gitalk = new Gitalk({
+        clientID: '0f281c11925e928ea3f5',
+        clientSecret: '42d04666a586164ffbdc6175cf85a2c326794e89',
+        repo: 'zza333.github.io',
+        owner: 'zza333',
+        admin: ['zza333'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
 
-      // This should probably be throttled.
-      // Especially because it triggers during smooth scrolling.
-      // https://lodash.com/docs/4.17.10#throttle
-      // You could do like...
-      // window.addEventListener("scroll", () => {
-      //    _.throttle(doThatStuff, 100);
-      // });
-      // Only not doing it here to keep this Pen dependency-free.
-
-      window.addEventListener("scroll", event => {
-        let fromTop = window.scrollY;
-
-        mainNavLinks.forEach((link, index) => {
-          let section = document.getElementById(decodeURI(link.hash).substring(1));
-          let nextSection = null
-          if (mainNavLinks[index + 1]) {
-            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-          }
-          if (section.offsetTop <= fromTop) {
-            if (nextSection) {
-              if (nextSection.offsetTop > fromTop) {
-                link.classList.add("current");
-              } else {
-                link.classList.remove("current");    
-              }
-            } else {
-              link.classList.add("current");
-            }
-          } else {
-            link.classList.remove("current");
-          }
-        });
-      });
+      gitalk.render('gitalk-container')
 
     </script>
+  
+
+  
+
+
+
+
   </body>
 </html>
