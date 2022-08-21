@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zza333.github.io</id>
     <title>Aly_</title>
-    <updated>2022-08-21T08:20:36.007Z</updated>
+    <updated>2022-08-21T08:22:13.264Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zza333.github.io"/>
     <link rel="self" href="https://zza333.github.io/atom.xml"/>
@@ -16,7 +16,11 @@
         <link href="https://zza333.github.io/post/sheng-cun-ri-ji/">
         </link>
         <updated>2022-08-21T00:47:33.000Z</updated>
-        <content type="html"><![CDATA[<h6 id="day2">day2</h6>
+        <summary type="html"><![CDATA[<p>我居然在生存。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>我居然在生存。</p>
+<!-- more -->
+<h6 id="day2">day2</h6>
 <p>尿检居然精准地尿进去了。左右胳膊各扎了一针。<br>
 走得累死了。第一节党课差点睡着。下午图书馆啥也没记住。<br>
 感觉自己洗衣服的习惯可能比较怪。<br>
@@ -36,8 +40,12 @@
         <link href="https://zza333.github.io/post/bu-fen-zhi-shi-dian/">
         </link>
         <updated>2022-08-20T09:45:09.000Z</updated>
+        <summary type="html"><![CDATA[<h4 id="1动态规划-dp">1.动态规划 DP</h4>
+<p>​	状态；状态的转移。</p>
+]]></summary>
         <content type="html"><![CDATA[<h4 id="1动态规划-dp">1.动态规划 DP</h4>
 <p>​	状态；状态的转移。</p>
+<!-- more -->
 <p>​	<strong>记忆化搜索</strong>：对一个状态搜索完毕后记下当前状态以便以后使用。适用于状态转移复杂的 DP。</p>
 <h6 id="区间-dp">区间 DP</h6>
 <p>​	状态常为区间左右端点。</p>
@@ -1075,9 +1083,14 @@ inoremap &quot; &quot;&quot;&lt;left&gt;
         <link href="https://zza333.github.io/post/cheng-shi-man-you/">
         </link>
         <updated>2022-06-30T02:36:58.000Z</updated>
+        <summary type="html"><![CDATA[<p>夜空晴朗。</p>
+<p>电梯停在一楼。小纳一个人走了出来。</p>
+<p>好累啊——</p>
+]]></summary>
         <content type="html"><![CDATA[<p>夜空晴朗。</p>
 <p>电梯停在一楼。小纳一个人走了出来。</p>
 <p>好累啊——</p>
+<!-- more -->
 <p>小纳心里想着。好像月亮要掉下来。她回想起一批批数据，连续不断地送进来的数据，像洪水一样的几十个 T 的数据——四台超算辅助下她还是显得那么无力。更要命的是 bug 之类的吧——为下午出现的第一个 bug 她调了整整两个小时得到的却是更多错误并且新增的观测数据还堆积在门外然后模型拟合的还完全不对然后几个数据点跳脱了预计范围并且一台临时储存器宕机了将近一个小时加上观测人员在那头倾倒进来的滚滚苦水——她的苦水才多呢。这次观测“太重要了”。唉。</p>
 <p>小纳想起几十分钟前她从窗口看到的强大闪光，以及紧随其后的巨大噪声，那大概是航站今天的最后一次航班。零点十七的一班。或者说今天第一次？总之它提醒她该下班了。感谢那些又亮又吵的客运飞船吧。唉。研究所就建在航站附近，鬼才想的主意。唉。</p>
 <p>还有一堆事吧。备忘录上似乎有六条。有的是事。总有事。唉。明天还得提早来研究所——好像还得赶三点的早一峰；现在应该是没事了的。散散心去。数据多的是。bug 多的是。模型多的是。观测任务多的是。研究人员就他们一组。唉——</p>
