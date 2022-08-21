@@ -1,256 +1,58 @@
-
 <html>
   <head>
-    
-<meta charset="utf-8" >
-
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Aly_</title>
-<meta name="description" content="B.Q.A.C.">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://zza333.github.io/favicon.ico?v=1661092563868">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://zza333.github.io/favicon.ico?v=1661093787468">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://zza333.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Aly_ - Atom Feed" href="https://zza333.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
-
-
+    <meta name="description" content="B.Q.A.C." />
   </head>
   <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://zza333.github.io">
-        <img class="avatar" src="https://zza333.github.io/images/avatar.png?v=1661092563868" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://zza333.github.io">
-        <h1 class="site-title">Aly_</h1>
-      </a>
-    </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://zza333.github.io">
+  <img class="avatar" src="https://zza333.github.io/images/avatar.png?v=1661093787468" alt="">
+  </a>
+  <h1 class="site-title">
+    Aly_
+  </h1>
+  <p class="site-description">
+    B.Q.A.C.
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
   </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
-        
-          <a href="/" class="menu purple-link">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="menu purple-link">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="menu purple-link">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="menu purple-link">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-</transition>
-
-
-      <div class="content-container">
-        
-        
-<section class="post-item">
-    <div class="content">
-      <a href="https://zza333.github.io/post/jie-ti-bao-gao-2021-sheng-xuan-you-ji/">
-        <h2 class="post-title">解题报告+2021省选游记</h2>
-      </a>
-      <div class="post-abstract">
-        <h2 id="解题报告">解题报告</h2>
-<h4 id="d1t1-卡牌游戏">D1T1 卡牌游戏</h4>
-<p>​	考虑二分答案 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span></span></span></span>，枚举最小值 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>i</mi></mrow><annotation encoding="application/x-tex">mi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">i</span></span></span></span>，于是确定最大值 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">mx</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">x</span></span></span></span>。在 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">a_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 中找出最小值最大值的位置，则中间的都不用翻，两边的都要翻。判断翻后是否合法以及翻的张数是否小于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span> 即可。</p>
-
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2021-04-19</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://zza333.github.io/tag/Hbis4oBaC/">
-                纪
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://zza333.github.io/post/sheng-xuan-lian-kao-2021-a-juan-zhi-pei-ti-jie/">
-        <h2 class="post-title">[省选联考 2021 A 卷] 支配 题解</h2>
-      </a>
-      <div class="post-abstract">
-        
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2021-04-17</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://zza333.github.io/tag/XzEc7vo5-/">
-                信
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://zza333.github.io/post/noi-online-2021-ti-gao-zu-dao-yu-tan-xian-ti-jie/">
-        <h2 class="post-title"> [NOI Online 2021 提高组] 岛屿探险 题解</h2>
-      </a>
-      <div class="post-abstract">
-        
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2021-03-27</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://zza333.github.io/tag/XzEc7vo5-/">
-                信
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://zza333.github.io/post/ti-jie-qing-hua-ji-xun-2017sheng-cheng-shu-ji-shu/">
-        <h2 class="post-title">题解【[清华集训2017]生成树计数】</h2>
-      </a>
-      <div class="post-abstract">
-        
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2021-03-18</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://zza333.github.io/tag/XzEc7vo5-/">
-                信
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://zza333.github.io/post/ti-jie-noi2004sha-qiu/">
-        <h2 class="post-title">题解【[NOI2004]沙丘】</h2>
-      </a>
-      <div class="post-abstract">
-        
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2020-11-15</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://zza333.github.io/tag/XzEc7vo5-/">
-                信
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://zza333.github.io/post/ti-jie-apio2018-new-home-xin-jia/">
-        <h2 class="post-title">题解【[APIO2018] New Home 新家】</h2>
-      </a>
-      <div class="post-abstract">
-        
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2020-10-31</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://zza333.github.io/tag/XzEc7vo5-/">
-                信
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-  </section>
-
-
-<div class="pagination-container">
-  
-    <a href="https://zza333.github.io/" class="prev"><i class="icon-arrow-ios-back-outline"></i> 上一页</a>
-  
-  
-</div>
-
-
-      </div>
-
-      <div class="site-footer">
-  <div class="slogan">B.Q.A.C.</div>
   <div class="social-container">
     
       
@@ -264,26 +66,171 @@
       
     
   </div>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zza333.github.io/atom.xml" target="_blank">RSS</a>
 </div>
 
+    
+        <div class="post-container">
+  
+    <article class="post">
+      <a href="https://zza333.github.io/post/jie-ti-bao-gao-2021-sheng-xuan-you-ji/">
+        <h2 class="post-title">解题报告+2021省选游记</h2>
+      </a>
+      <div class="post-info">
+        <span>
+          2021-04-19
+        </span>
+        <span>
+          8 min read
+        </span>
+        
+          <a href="https://zza333.github.io/tag/Hbis4oBaC/" class="post-tag">
+            # 纪
+          </a>
+        
+      </div>
+      
+      <div class="post-abstract">
+        <h2 id="解题报告">解题报告</h2>
+<h4 id="d1t1-卡牌游戏">D1T1 卡牌游戏</h4>
+<p>​	考虑二分答案 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span></span></span></span>，枚举最小值 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>i</mi></mrow><annotation encoding="application/x-tex">mi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">i</span></span></span></span>，于是确定最大值 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">mx</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">x</span></span></span></span>。在 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">a_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 中找出最小值最大值的位置，则中间的都不用翻，两边的都要翻。判断翻后是否合法以及翻的张数是否小于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span> 即可。</p>
 
+      </div>
+    </article>
+  
+    <article class="post">
+      <a href="https://zza333.github.io/post/sheng-xuan-lian-kao-2021-a-juan-zhi-pei-ti-jie/">
+        <h2 class="post-title">[省选联考 2021 A 卷] 支配 题解</h2>
+      </a>
+      <div class="post-info">
+        <span>
+          2021-04-17
+        </span>
+        <span>
+          6 min read
+        </span>
+        
+          <a href="https://zza333.github.io/tag/XzEc7vo5-/" class="post-tag">
+            # 信
+          </a>
+        
+      </div>
+      
+      <div class="post-abstract">
+        
+      </div>
+    </article>
+  
+    <article class="post">
+      <a href="https://zza333.github.io/post/noi-online-2021-ti-gao-zu-dao-yu-tan-xian-ti-jie/">
+        <h2 class="post-title"> [NOI Online 2021 提高组] 岛屿探险 题解</h2>
+      </a>
+      <div class="post-info">
+        <span>
+          2021-03-27
+        </span>
+        <span>
+          5 min read
+        </span>
+        
+          <a href="https://zza333.github.io/tag/XzEc7vo5-/" class="post-tag">
+            # 信
+          </a>
+        
+      </div>
+      
+      <div class="post-abstract">
+        
+      </div>
+    </article>
+  
+    <article class="post">
+      <a href="https://zza333.github.io/post/ti-jie-qing-hua-ji-xun-2017sheng-cheng-shu-ji-shu/">
+        <h2 class="post-title">题解【[清华集训2017]生成树计数】</h2>
+      </a>
+      <div class="post-info">
+        <span>
+          2021-03-18
+        </span>
+        <span>
+          11 min read
+        </span>
+        
+          <a href="https://zza333.github.io/tag/XzEc7vo5-/" class="post-tag">
+            # 信
+          </a>
+        
+      </div>
+      
+      <div class="post-abstract">
+        
+      </div>
+    </article>
+  
+    <article class="post">
+      <a href="https://zza333.github.io/post/ti-jie-noi2004sha-qiu/">
+        <h2 class="post-title">题解【[NOI2004]沙丘】</h2>
+      </a>
+      <div class="post-info">
+        <span>
+          2020-11-15
+        </span>
+        <span>
+          6 min read
+        </span>
+        
+          <a href="https://zza333.github.io/tag/XzEc7vo5-/" class="post-tag">
+            # 信
+          </a>
+        
+      </div>
+      
+      <div class="post-abstract">
+        
+      </div>
+    </article>
+  
+    <article class="post">
+      <a href="https://zza333.github.io/post/ti-jie-apio2018-new-home-xin-jia/">
+        <h2 class="post-title">题解【[APIO2018] New Home 新家】</h2>
+      </a>
+      <div class="post-info">
+        <span>
+          2020-10-31
+        </span>
+        <span>
+          9 min read
+        </span>
+        
+          <a href="https://zza333.github.io/tag/XzEc7vo5-/" class="post-tag">
+            # 信
+          </a>
+        
+      </div>
+      
+      <div class="post-abstract">
+        
+      </div>
+    </article>
+  
+</div>
+
+    
+        <div class="pagination-container">
+  
+    <a href="https://zza333.github.io/" class="prev-page">上一页</a>
+  
+  
+</div>
+
+    
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://zza333.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
     </div>
-    <script type="application/javascript">
-
-hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
-</script>
-
-
-
-
   </body>
 </html>

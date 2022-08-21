@@ -1,350 +1,58 @@
-
 <html>
   <head>
-    
-<meta charset="utf-8" >
-
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Aly_</title>
-<meta name="description" content="B.Q.A.C.">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://zza333.github.io/favicon.ico?v=1661092563868">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://zza333.github.io/favicon.ico?v=1661093787468">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://zza333.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Aly_ - Atom Feed" href="https://zza333.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
-
-
+    <meta name="description" content="B.Q.A.C." />
   </head>
   <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://zza333.github.io">
-        <img class="avatar" src="https://zza333.github.io/images/avatar.png?v=1661092563868" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://zza333.github.io">
-        <h1 class="site-title">Aly_</h1>
-      </a>
-    </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://zza333.github.io">
+  <img class="avatar" src="https://zza333.github.io/images/avatar.png?v=1661093787468" alt="">
+  </a>
+  <h1 class="site-title">
+    Aly_
+  </h1>
+  <p class="site-description">
+    B.Q.A.C.
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
   </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
-        
-          <a href="/" class="menu purple-link">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="menu purple-link">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="menu purple-link">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="menu purple-link">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-</transition>
-
-
-      <div class="content-container">
-        
-        
-<section class="post-item">
-    <div class="content">
-      <a href="https://zza333.github.io/post/zhe-li-shi/">
-        <h2 class="post-title">这里是……</h2>
-      </a>
-      <div class="post-abstract">
-        
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2022-01-30</span>
-        
-      </div>
-    </div>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://zza333.github.io/post/sheng-cun-ri-ji/">
-        <h2 class="post-title">生存日记</h2>
-      </a>
-      <div class="post-abstract">
-        <p>我居然在生存。</p>
-
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2022-08-21</span>
-        
-      </div>
-    </div>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://zza333.github.io/post/bu-fen-zhi-shi-dian/">
-        <h2 class="post-title">部分知识点</h2>
-      </a>
-      <div class="post-abstract">
-        <h4 id="1动态规划-dp">1.动态规划 DP</h4>
-<p>​	状态；状态的转移。</p>
-
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2022-08-20</span>
-        
-      </div>
-    </div>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://zza333.github.io/post/cheng-shi-man-you/">
-        <h2 class="post-title">城市漫游</h2>
-      </a>
-      <div class="post-abstract">
-        <p>夜空晴朗。</p>
-<p>电梯停在一楼。小纳一个人走了出来。</p>
-<p>好累啊——</p>
-
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2022-06-30</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://zza333.github.io/tag/aScNAj0Q9/">
-                杂
-                
-                  ，
-                
-              </a>
-            
-              <a href="https://zza333.github.io/tag/Hbis4oBaC/">
-                纪
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://zza333.github.io/post/hong-se/">
-        <h2 class="post-title">红色</h2>
-      </a>
-      <div class="post-abstract">
-        <p><a href="https://zza333.github.io/home/red">你应选择红色。</a></p>
-
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2022-02-04</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://zza333.github.io/tag/aScNAj0Q9/">
-                杂
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://zza333.github.io/post/noi2019-i-jun-de-tan-xian-ti-jie/">
-        <h2 class="post-title">【[NOI2019] I 君的探险】 题解</h2>
-      </a>
-      <div class="post-abstract">
-        <h4 id="题意简述">题意简述</h4>
-<p>​	<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 点 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi></mrow><annotation encoding="application/x-tex">M</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span></span></span></span> 边无向图，形态未知。每个点有状态：关 / 开。现需通过如下四种操作确定图的形态：</p>
-
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2021-06-03</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://zza333.github.io/tag/XzEc7vo5-/">
-                信
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://zza333.github.io/post/noi2008-ao-yun-wu-liu-ti-jie/">
-        <h2 class="post-title">[NOI2008] 奥运物流 题解</h2>
-      </a>
-      <div class="post-abstract">
-        <h4 id="分析"><strong>分析</strong></h4>
-<p>​	先考虑怎么算 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>R</mi><mo>(</mo><mi>i</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">R(i)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mclose">)</span></span></span></span>。</p>
-
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2021-04-29</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://zza333.github.io/tag/XzEc7vo5-/">
-                信
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://zza333.github.io/post/noi2008-she-ji-lu-xian-ti-jie/">
-        <h2 class="post-title"> [NOI2008] 设计路线 题解</h2>
-      </a>
-      <div class="post-abstract">
-        <p><strong>树上背包 + Max 卷积</strong></p>
-
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2021-04-28</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://zza333.github.io/tag/XzEc7vo5-/">
-                信
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://zza333.github.io/post/noi2010-cheng-chang-kuai-le-ti-jie/">
-        <h2 class="post-title"> [NOI2010] 成长快乐 题解</h2>
-      </a>
-      <div class="post-abstract">
-        <h4 id="初步分析">初步分析</h4>
-<p>​	<strong>nemo 肯定走直线</strong>。</p>
-
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2021-04-26</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://zza333.github.io/tag/XzEc7vo5-/">
-                信
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://zza333.github.io/post/noi2018-ni-de-ming-zi-de-ling-yi-chong-jie-fa/">
-        <h2 class="post-title">[NOI2018] 你的名字 的另一种解法</h2>
-      </a>
-      <div class="post-abstract">
-        <p>​	<strong>SAM + 虚树 + 主席树</strong>。基本不需要动脑子但码量有点大。</p>
-<p>​	<strong>本方法不要求很熟悉 SAM 的相关内容。</strong></p>
-
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2021-04-26</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://zza333.github.io/tag/XzEc7vo5-/">
-                信
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-  </section>
-
-
-<div class="pagination-container">
-  
-  
-    <a href="https://zza333.github.io/page/2" class="next">下一页 <i class="icon-arrow-ios-forward-outline"></i></a>
-  
-</div>
-
-
-      </div>
-
-      <div class="site-footer">
-  <div class="slogan">B.Q.A.C.</div>
   <div class="social-container">
     
       
@@ -358,26 +66,277 @@
       
     
   </div>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zza333.github.io/atom.xml" target="_blank">RSS</a>
 </div>
 
+    
+        <div class="post-container">
+  
+    <article class="post">
+      <a href="https://zza333.github.io/post/zhe-li-shi/">
+        <h2 class="post-title">这里是……</h2>
+      </a>
+      <div class="post-info">
+        <span>
+          2022-01-30
+        </span>
+        <span>
+          1 min read
+        </span>
+        
+      </div>
+      
+      <div class="post-abstract">
+        
+      </div>
+    </article>
+  
+    <article class="post">
+      <a href="https://zza333.github.io/post/sheng-cun-ri-ji/">
+        <h2 class="post-title">生存日记</h2>
+      </a>
+      <div class="post-info">
+        <span>
+          2022-08-21
+        </span>
+        <span>
+          1 min read
+        </span>
+        
+      </div>
+      
+        <a href="https://zza333.github.io/post/sheng-cun-ri-ji/" class="post-feature-image" style="background-image: url('https://zza333.github.io/post-images/sheng-cun-ri-ji.png')">
+        </a>
+      
+      <div class="post-abstract">
+        <p>我居然在生存。</p>
 
+      </div>
+    </article>
+  
+    <article class="post">
+      <a href="https://zza333.github.io/post/bu-fen-zhi-shi-dian/">
+        <h2 class="post-title">部分知识点</h2>
+      </a>
+      <div class="post-info">
+        <span>
+          2022-08-20
+        </span>
+        <span>
+          121 min read
+        </span>
+        
+      </div>
+      
+        <a href="https://zza333.github.io/post/bu-fen-zhi-shi-dian/" class="post-feature-image" style="background-image: url('https://zza333.github.io/post-images/bu-fen-zhi-shi-dian.jpeg')">
+        </a>
+      
+      <div class="post-abstract">
+        <h4 id="1动态规划-dp">1.动态规划 DP</h4>
+<p>​	状态；状态的转移。</p>
+
+      </div>
+    </article>
+  
+    <article class="post">
+      <a href="https://zza333.github.io/post/cheng-shi-man-you/">
+        <h2 class="post-title">城市漫游</h2>
+      </a>
+      <div class="post-info">
+        <span>
+          2022-06-30
+        </span>
+        <span>
+          56 min read
+        </span>
+        
+          <a href="https://zza333.github.io/tag/aScNAj0Q9/" class="post-tag">
+            # 杂
+          </a>
+        
+          <a href="https://zza333.github.io/tag/Hbis4oBaC/" class="post-tag">
+            # 纪
+          </a>
+        
+      </div>
+      
+        <a href="https://zza333.github.io/post/cheng-shi-man-you/" class="post-feature-image" style="background-image: url('https://zza333.github.io/post-images/cheng-shi-man-you.png')">
+        </a>
+      
+      <div class="post-abstract">
+        <p>夜空晴朗。</p>
+<p>电梯停在一楼。小纳一个人走了出来。</p>
+<p>好累啊——</p>
+
+      </div>
+    </article>
+  
+    <article class="post">
+      <a href="https://zza333.github.io/post/hong-se/">
+        <h2 class="post-title">红色</h2>
+      </a>
+      <div class="post-info">
+        <span>
+          2022-02-04
+        </span>
+        <span>
+          1 min read
+        </span>
+        
+          <a href="https://zza333.github.io/tag/aScNAj0Q9/" class="post-tag">
+            # 杂
+          </a>
+        
+      </div>
+      
+      <div class="post-abstract">
+        <p><a href="https://zza333.github.io/home/red">你应选择红色。</a></p>
+
+      </div>
+    </article>
+  
+    <article class="post">
+      <a href="https://zza333.github.io/post/noi2019-i-jun-de-tan-xian-ti-jie/">
+        <h2 class="post-title">【[NOI2019] I 君的探险】 题解</h2>
+      </a>
+      <div class="post-info">
+        <span>
+          2021-06-03
+        </span>
+        <span>
+          10 min read
+        </span>
+        
+          <a href="https://zza333.github.io/tag/XzEc7vo5-/" class="post-tag">
+            # 信
+          </a>
+        
+      </div>
+      
+      <div class="post-abstract">
+        <h4 id="题意简述">题意简述</h4>
+<p>​	<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 点 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi></mrow><annotation encoding="application/x-tex">M</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span></span></span></span> 边无向图，形态未知。每个点有状态：关 / 开。现需通过如下四种操作确定图的形态：</p>
+
+      </div>
+    </article>
+  
+    <article class="post">
+      <a href="https://zza333.github.io/post/noi2008-ao-yun-wu-liu-ti-jie/">
+        <h2 class="post-title">[NOI2008] 奥运物流 题解</h2>
+      </a>
+      <div class="post-info">
+        <span>
+          2021-04-29
+        </span>
+        <span>
+          8 min read
+        </span>
+        
+          <a href="https://zza333.github.io/tag/XzEc7vo5-/" class="post-tag">
+            # 信
+          </a>
+        
+      </div>
+      
+      <div class="post-abstract">
+        <h4 id="分析"><strong>分析</strong></h4>
+<p>​	先考虑怎么算 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>R</mi><mo>(</mo><mi>i</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">R(i)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mclose">)</span></span></span></span>。</p>
+
+      </div>
+    </article>
+  
+    <article class="post">
+      <a href="https://zza333.github.io/post/noi2008-she-ji-lu-xian-ti-jie/">
+        <h2 class="post-title"> [NOI2008] 设计路线 题解</h2>
+      </a>
+      <div class="post-info">
+        <span>
+          2021-04-28
+        </span>
+        <span>
+          5 min read
+        </span>
+        
+          <a href="https://zza333.github.io/tag/XzEc7vo5-/" class="post-tag">
+            # 信
+          </a>
+        
+      </div>
+      
+      <div class="post-abstract">
+        <p><strong>树上背包 + Max 卷积</strong></p>
+
+      </div>
+    </article>
+  
+    <article class="post">
+      <a href="https://zza333.github.io/post/noi2010-cheng-chang-kuai-le-ti-jie/">
+        <h2 class="post-title"> [NOI2010] 成长快乐 题解</h2>
+      </a>
+      <div class="post-info">
+        <span>
+          2021-04-26
+        </span>
+        <span>
+          5 min read
+        </span>
+        
+          <a href="https://zza333.github.io/tag/XzEc7vo5-/" class="post-tag">
+            # 信
+          </a>
+        
+      </div>
+      
+      <div class="post-abstract">
+        <h4 id="初步分析">初步分析</h4>
+<p>​	<strong>nemo 肯定走直线</strong>。</p>
+
+      </div>
+    </article>
+  
+    <article class="post">
+      <a href="https://zza333.github.io/post/noi2018-ni-de-ming-zi-de-ling-yi-chong-jie-fa/">
+        <h2 class="post-title">[NOI2018] 你的名字 的另一种解法</h2>
+      </a>
+      <div class="post-info">
+        <span>
+          2021-04-26
+        </span>
+        <span>
+          12 min read
+        </span>
+        
+          <a href="https://zza333.github.io/tag/XzEc7vo5-/" class="post-tag">
+            # 信
+          </a>
+        
+      </div>
+      
+      <div class="post-abstract">
+        <p>​	<strong>SAM + 虚树 + 主席树</strong>。基本不需要动脑子但码量有点大。</p>
+<p>​	<strong>本方法不要求很熟悉 SAM 的相关内容。</strong></p>
+
+      </div>
+    </article>
+  
+</div>
+
+    
+        <div class="pagination-container">
+  
+  
+    <a href="https://zza333.github.io/page/2" class="next-page">下一页</a>
+  
+</div>
+
+    
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://zza333.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
     </div>
-    <script type="application/javascript">
-
-hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
-</script>
-
-
-
-
   </body>
 </html>
