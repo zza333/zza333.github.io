@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zza333.github.io</id>
     <title>Aly_</title>
-    <updated>2022-08-28T12:37:06.542Z</updated>
+    <updated>2022-08-28T12:38:25.785Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zza333.github.io"/>
     <link rel="self" href="https://zza333.github.io/atom.xml"/>
@@ -93,7 +93,7 @@
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[部分知识点]]></title>
+        <title type="html"><![CDATA[较全的部分 OI 知识点]]></title>
         <id>https://zza333.github.io/post/bu-fen-zhi-shi-dian/</id>
         <link href="https://zza333.github.io/post/bu-fen-zhi-shi-dian/">
         </link>
